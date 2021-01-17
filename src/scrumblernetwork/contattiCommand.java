@@ -15,10 +15,10 @@ public class contattiCommand extends Command {
         if(args.length == 0){
             ProxiedPlayer p = (ProxiedPlayer) cs;
             p.sendMessage("§a§lContatti");
-            p.sendMessage("Email:");
-            p.sendMessage("Segnalazione Bugs: bug.minecraft@scrumblernetwork.com");
-            p.sendMessage("Ufficiale: official@scrumblernetwork.com");
-            p.sendMessage("Support: support@scrumblernetwork.com");
+            p.sendMessage("§aEmail:");
+            p.sendMessage("§aSegnalazione Bugs: bug.minecraft@scrumblernetwork.com");
+            p.sendMessage("§aUfficiale: official@scrumblernetwork.com");
+            p.sendMessage("§aSupport: support@scrumblernetwork.com");
         }
     }
 
