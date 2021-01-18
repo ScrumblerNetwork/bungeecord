@@ -1,5 +1,6 @@
 package scrumblernetwork;
 
+import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 
@@ -9,7 +10,7 @@ public class main extends Plugin {
 
     @Override
     public void onEnable(){
-        System.out.print("§a[ScrumblerNetwork] Plugin Abilitato Correttamente!");
+        System.out.print(ChatColor.GREEN + "[ScrumblerNetwork] Plugin Abilitato Correttamente!");
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new contattiCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new hubCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new lobbyCommand(this));
@@ -24,7 +25,7 @@ public class main extends Plugin {
     }
 
     public void onDisable(){
-        System.out.print("[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
+        System.out.print(ChatColor.GREEN + "[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
     }
 
 }
