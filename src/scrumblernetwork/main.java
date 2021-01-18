@@ -3,6 +3,8 @@ package scrumblernetwork;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
 
+import java.lang.reflect.Proxy;
+
 public class main extends Plugin {
 
     @Override
@@ -14,10 +16,15 @@ public class main extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new factionsCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new skywarsCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new opprisonCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new vanillaCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new raicraftCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new bedwarsCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new kitpvpCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new testpluginsCommand(this));
     }
 
     public void onDisable(){
-        System.out.print("§a[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
+        System.out.print("[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
     }
 
 }
