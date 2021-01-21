@@ -10,7 +10,7 @@ public class main extends Plugin {
 
     @Override
     public void onEnable(){
-        System.out.print(ChatColor.GREEN + "[ScrumblerNetwork] Plugin Abilitato Correttamente!");
+        System.out.print("[ScrumblerNetwork] Plugin Abilitato Correttamente!");
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new contattiCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new hubCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new lobbyCommand(this));
@@ -22,10 +22,11 @@ public class main extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new bedwarsCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new kitpvpCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new testpluginsCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new assistenzaCommand(this));
     }
 
     public void onDisable(){
-        System.out.print(ChatColor.GREEN + "[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
+        System.out.print("[ScrumblerNetwork] Plugin Disabilitato Correttamente!");
     }
 
 }
