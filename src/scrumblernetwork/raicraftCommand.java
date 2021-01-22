@@ -14,10 +14,14 @@ public class raicraftCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo RaiCraft = ProxyServer.getInstance().getServerInfo("raicraft");
-            p.connect(RaiCraft);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo RaiCraft = ProxyServer.getInstance().getServerInfo("raicraft");
+                p.connect(RaiCraft);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

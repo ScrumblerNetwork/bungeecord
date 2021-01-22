@@ -14,10 +14,14 @@ public class vanillaCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo Vanilla = ProxyServer.getInstance().getServerInfo("Vanilla");
-            p.connect(Vanilla);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo Vanilla = ProxyServer.getInstance().getServerInfo("Vanilla");
+                p.connect(Vanilla);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

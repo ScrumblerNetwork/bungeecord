@@ -14,10 +14,14 @@ public class hubCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args) {
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo Hub = ProxyServer.getInstance().getServerInfo("Hub");
-            p.connect(Hub);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo Hub = ProxyServer.getInstance().getServerInfo("Hub");
+                p.connect(Hub);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 }

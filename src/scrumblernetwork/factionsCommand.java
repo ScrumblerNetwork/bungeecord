@@ -14,10 +14,14 @@ public class factionsCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo Factions = ProxyServer.getInstance().getServerInfo("Factions");
-            p.connect(Factions);
+        if(cs instanceof ProxiedPlayer) {
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo Factions = ProxyServer.getInstance().getServerInfo("Factions");
+                p.connect(Factions);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

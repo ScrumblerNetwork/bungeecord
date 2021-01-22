@@ -14,10 +14,14 @@ public class testpluginsCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo TestPlugins = ProxyServer.getInstance().getServerInfo("test-plugins");
-            p.connect(TestPlugins);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo TestPlugins = ProxyServer.getInstance().getServerInfo("test-plugins");
+                p.connect(TestPlugins);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

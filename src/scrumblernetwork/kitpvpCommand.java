@@ -14,10 +14,14 @@ public class kitpvpCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo KitPvP = ProxyServer.getInstance().getServerInfo("KitPvp");
-            p.connect(KitPvP);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo KitPvP = ProxyServer.getInstance().getServerInfo("KitPvp");
+                p.connect(KitPvP);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

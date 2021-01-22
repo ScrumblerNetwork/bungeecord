@@ -14,10 +14,14 @@ public class opprisonCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo OpPrison = ProxyServer.getInstance().getServerInfo("OpPrison");
-            p.connect(OpPrison);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo OpPrison = ProxyServer.getInstance().getServerInfo("OpPrison");
+                p.connect(OpPrison);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 

@@ -14,10 +14,14 @@ public class bedwarsCommand extends Command {
 
     @Override
     public void execute(CommandSender cs, String[] args){
-        if(args.length == 0){
-            ProxiedPlayer p = (ProxiedPlayer) cs;
-            ServerInfo BedWars = ProxyServer.getInstance().getServerInfo("BedWars");
-            p.connect(BedWars);
+        if(cs instanceof ProxiedPlayer){
+            if(args.length == 0){
+                ProxiedPlayer p = (ProxiedPlayer) cs;
+                ServerInfo BedWars = ProxyServer.getInstance().getServerInfo("BedWars");
+                p.connect(BedWars);
+            }
+        }else{
+            System.out.print("Non sei un Player!");
         }
     }
 
