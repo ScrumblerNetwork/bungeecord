@@ -18,7 +18,6 @@ public class main extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new skywarsCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new opprisonCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new vanillaCommand(this));
-        ProxyServer.getInstance().getPluginManager().registerCommand(this, new raicraftCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new bedwarsCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new kitpvpCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new testpluginsCommand(this));
