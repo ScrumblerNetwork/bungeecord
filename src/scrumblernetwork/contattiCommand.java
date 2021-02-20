@@ -24,7 +24,7 @@ public class contattiCommand extends Command {
         }else{
             System.out.print("Contatti");
             System.out.print("Email:");
-            System.out.print("§Segnalazione Bugs: bug.minecraft@scrumblernetwork.com");
+            System.out.print("Segnalazione Bugs: bug.minecraft@scrumblernetwork.com");
             System.out.print("Ufficiale: official@scrumblernetwork.com");
             System.out.print("Support: support@scrumblernetwork.com");
         }
