@@ -16,16 +16,16 @@ public class assistenzaCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§e§l------------------------------------------------");
+                p.sendMessage("§e§l--------------------------------------------");
                 p.sendMessage("§8§l- §a§lMail Supporto:");
                 p.sendMessage("§8§l- §asupport@scrumblernetwork.com");
-                p.sendMessage("§e§l------------------------------------------------");
+                p.sendMessage("§e§l--------------------------------------------");
             }
         }else{
-            System.out.print("------------------------------------------------");
+            System.out.print("--------------------------------------------");
             System.out.print("- Mail Supporto:");
             System.out.print("- support@scrumblernetwork.com");
-            System.out.print("------------------------------------------------");
+            System.out.print("--------------------------------------------");
         }
     }
 

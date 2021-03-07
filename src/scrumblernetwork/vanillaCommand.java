@@ -17,7 +17,7 @@ public class vanillaCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§7§lSi sto inviando al server: §a§lVANILLA");
+                p.sendMessage("§7§lTi sto inviando al server: §a§lVANILLA");
                 ServerInfo Vanilla = ProxyServer.getInstance().getServerInfo("Vanilla");
                 p.connect(Vanilla);
                 System.out.print("BungeeCord | ScrumblerNetwork" + p + "Si è stato inviato al server Vanilla");

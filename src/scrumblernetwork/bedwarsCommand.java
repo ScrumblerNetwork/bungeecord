@@ -17,7 +17,7 @@ public class bedwarsCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§7§lSi sto inviando al server: §a§lBEDWARS");
+                p.sendMessage("§7§lTi sto inviando al server: §a§lBEDWARS");
                 ServerInfo BedWars = ProxyServer.getInstance().getServerInfo("BedWars");
                 p.connect(BedWars);
                 System.out.print("BungeeCord | ScrumblerNetwork" + p + "Si è stato inviato al server BedWars");
