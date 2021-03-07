@@ -17,8 +17,10 @@ public class kitpvpCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
+                p.sendMessage("§7§lSi sto inviando al server: §a§lKITPVP");
                 ServerInfo KitPvP = ProxyServer.getInstance().getServerInfo("KitPvp");
                 p.connect(KitPvP);
+                System.out.print("BungeeCord | ScrumblerNetwork" + p + "Si è stato inviato al server KitPvP");
             }
         }else{
             System.out.print("Non sei un Player!");
