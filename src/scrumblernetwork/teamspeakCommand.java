@@ -18,10 +18,10 @@ public class teamspeakCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§e§l--------------------------------------------");
-                p.sendMessage("§8§l- §a§lServer TeamSpeak:");
-                p.sendMessage("§8§l- §a§lts3.scrumbler.it");
-                p.sendMessage("§e§l--------------------------------------------");
+                p.sendMessage("§7§l§m--------------------------------------------");
+                p.sendMessage("§8§l- §7Server TeamSpeak:");
+                p.sendMessage("§8§l- §7ts3.scrumbler.it");
+                p.sendMessage("§7§l§m--------------------------------------------");
             }
         }else{
             System.out.print("--------------------------------------------");

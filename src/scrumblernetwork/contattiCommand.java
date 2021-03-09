@@ -15,13 +15,13 @@ public class contattiCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§e§l--------------------------------------------");
-                p.sendMessage("§a§l         ------- Contatti -------");
-                p.sendMessage("§8§l- §aEmail:");
-                p.sendMessage("§8§l- §aSegnalazione Bugs: bug.minecraft@scrumblernetwork.com");
-                p.sendMessage("§8§l- §aUfficiale: official@scrumblernetwork.com");
-                p.sendMessage("§8§l- §aSupport: support@scrumblernetwork.com");
-                p.sendMessage("§e§l--------------------------------------------");
+                p.sendMessage("§7§l§m--------------------------------------------");
+                p.sendMessage("§a§l                   Contatti");
+                p.sendMessage("§8§l- §7Email:");
+                p.sendMessage("§8§l- §7Segnalazione Bugs: bug.minecraft@scrumblernetwork.com");
+                p.sendMessage("§8§l- §7Ufficiale: official@scrumblernetwork.com");
+                p.sendMessage("§8§l- §7Support: support@scrumblernetwork.com");
+                p.sendMessage("§7§l§m--------------------------------------------");
             }
         }else{
             System.out.print("--------------------------------------------");

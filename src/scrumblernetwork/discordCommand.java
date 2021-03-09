@@ -4,30 +4,27 @@ import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
-public class voteCommand extends Command {
+public class discordCommand extends Command {
 
-    public voteCommand(main m){
-        super("Vote");
+    public discordCommand(main m){
+        super("Discord");
     }
 
     @Override
-    public void execute (CommandSender cs, String[] args){
+    public void execute(CommandSender cs, String[] args){
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
                 p.sendMessage("§7§l§m--------------------------------------------");
-                p.sendMessage("§8§l- §7Siti per Votare il Server:");
-                p.sendMessage("§8§l- §71) §fmcserveritalia.it");
-                p.sendMessage("§8§l- §72) §fhttps://minecraft-mp.com/server-s277712");
+                p.sendMessage("§8§l- §7Server Discord:");
+                p.sendMessage("§8§l- §7discord.scrumbler.it");
                 p.sendMessage("§7§l§m--------------------------------------------");
             }
         }else{
             System.out.print("--------------------------------------------");
-            System.out.print("- Siti per Votare il Server:");
-            System.out.print("- 1) mcserveritalia.it");
-            System.out.print("- 2) https://minecraft-mp.com/server-s277712");
+            System.out.print("- Server Discord:");
+            System.out.print("- discord.scrumbler.it");
             System.out.print("--------------------------------------------");
         }
     }
-
 }
