@@ -20,6 +20,7 @@ public class main extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new assistenzaCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new voteCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new teamspeakCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new discordCommand(this));
     }
 
     public void onDisable(){

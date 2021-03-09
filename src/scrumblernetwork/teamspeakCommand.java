@@ -21,12 +21,14 @@ public class teamspeakCommand extends Command {
                 p.sendMessage("§7§l§m--------------------------------------------");
                 p.sendMessage("§8§l- §7Server TeamSpeak:");
                 p.sendMessage("§8§l- §7ts3.scrumbler.it");
+                p.sendMessage("§8§L- §7ATTUALMENTE IN MANUTENZIONE");
                 p.sendMessage("§7§l§m--------------------------------------------");
             }
         }else{
             System.out.print("--------------------------------------------");
             System.out.print("- Server TeamSpeak:");
             System.out.print("- ts3.scrumbler.it");
+            System.out.print("- ATTUALMENTE IN MANUTENZIONE");
             System.out.print("--------------------------------------------");
         }
     }
