@@ -20,7 +20,6 @@ public class bedwarsCommand extends Command {
                 p.sendMessage("§7§lTi sto inviando al server: §a§lBEDWARS");
                 ServerInfo BedWars = ProxyServer.getInstance().getServerInfo("BedWars");
                 p.connect(BedWars);
-                System.out.print("BungeeCord | ScrumblerNetwork" + p + "Si è stato inviato al server BedWars");
             }
         }else{
             System.out.print("Non sei un Player!");
