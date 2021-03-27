@@ -17,7 +17,7 @@ public class hubCommand extends Command {
         if(cs instanceof ProxiedPlayer){
             if(args.length == 0){
                 ProxiedPlayer p = (ProxiedPlayer) cs;
-                p.sendMessage("§7§lSi sto inviando al server: §a§lHUB");
+                p.sendMessage("§7§lTi sto inviando al server: §a§lHUB");
                 ServerInfo Hub = ProxyServer.getInstance().getServerInfo("Hub");
                 p.connect(Hub);
             }
