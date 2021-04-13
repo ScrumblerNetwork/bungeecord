@@ -16,7 +16,7 @@ public class main extends Plugin {
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new lobbyCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new vanillaCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new bedwarsCommand(this));
-        ProxyServer.getInstance().getPluginManager().registerCommand(this, new kitpvpCommand(this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new practiceCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new assistenzaCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new voteCommand(this));
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new teamspeakCommand(this));
